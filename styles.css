@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    background: linear-gradient(135deg, #1f1c2c, #535353); /* Sleek Dark Gradient */
+    color: #fff;
+    padding: 20px;
+}
+
+/* Bigger Centered Container */
+.container {
+    width: 600px; /* Increased width */
+    padding: 40px; /* More padding for space */
+    background: linear-gradient(145deg, #444, #3a3a3a); /* 3D Effect */
+    border-radius: 20px; /* Larger radius for smoother corners */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8); /* Stronger shadow for depth */
+    transition: transform 0.3s ease-in-out;
+    text-align: center; /* Center content */
+}
+
+/* Hover Effect */
+.container:hover {
+    transform: translateY(-8px);
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 30px;
+    font-size: 36px; /* Bigger heading */
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Stopwatch Display */
+#stopwatch {
+    font-size: 56px; /* Larger display */
+    margin-bottom: 30px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 14px rgba(79, 172, 254, 0.9);
+    text-align: center; /* Center the stopwatch text */
+}
+
+/* Buttons */
+.buttons button {
+    padding: 14px 28px; /* Larger buttons */
+    margin: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+/* Updated Button Colors */
+#startBtn {
+    background: linear-gradient(135deg, #4caf50, #45a049); /* Green for Start */
+    color: #fff;
+}
+
+#stopBtn {
+    background: linear-gradient(135deg, #f44336, #e53935); /* Red for Stop */
+    color: #fff;
+}
+
+#resetBtn {
+    background: linear-gradient(135deg, #ffeb3b, #fdd835); /* Yellow for Reset */
+    color: #333;
+}
+
+#lapBtn {
+    background: linear-gradient(135deg, #03a9f4, #0288d1); /* Blue for Lap */
+    color: #fff;
+}
+
+/* Button Hover Effect */
+.buttons button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Lap List */
+#laps {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 25px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Individual Lap Item */
+#laps li {
+    background: linear-gradient(135deg, #3b3b3b, #2b2b2b);
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #stopwatch {
+        font-size: 42px;
+    }
+
+    .buttons button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
